@@ -25,19 +25,30 @@ int luas_balok(int c1, int c2, int c3){
 }
 
 int main(){
-
-	printf("Program Menghitung keliling, volume, dan luas Balok\n");
 	
 	//deklarasi variable
 	int panjang, lebar, tinggi,volume, keliling, luas ;
 	
-	//mengambil input user
-	printf("nilai panjang : ");
-	scanf("%d", &panjang);
-	printf("nilai lebar : ");
-	scanf("%d", &lebar);
-	printf("nilai tinggi : ");
-	scanf("%d", &tinggi);
+	
+	do{
+		printf("Program Menghitung keliling, volume, dan luas Balok\n");
+		
+		//mengambil input user
+		printf("nilai panjang : ");
+		scanf("%d", &panjang);
+		printf("nilai lebar : ");
+		scanf("%d", &lebar);
+		printf("nilai tinggi : ");
+		scanf("%d", &tinggi);
+		system("clear");
+		if(!panjang || !lebar || !tinggi || panjang<=0 || lebar<=0 || tinggi<=0){
+			printf("input salah\n");
+			system("pause");
+			system("clear");
+		}
+		fflush(stdin);
+	}while(!panjang || !lebar || !tinggi || panjang<=0 || lebar<=0 || tinggi<=0);
+	
 	
 	
 	//cetak hasil perhitungan volume, keliling, dan luas balok dari fungsi di atas

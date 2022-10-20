@@ -27,11 +27,11 @@ float fungsi_hambatan(float voltase, float ampere){
 
 int main(){
 	
-	//Program menghitung rumus hukum ohm
-	printf("Program perhitungan rumus hukum ohm\n");
-	
 	//deklarasi variable 
 	float tegangan, arus, hambatan;
+	
+	//Program menghitung rumus hukum ohm
+	printf("Program perhitungan rumus hukum ohm\n");
 	
 	//pengambilan input user
 	printf("tegangan : "); scanf("%f", &tegangan);
